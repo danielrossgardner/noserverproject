@@ -1,0 +1,33 @@
+<div class="planet-container" ng-cloak>
+  <header>
+    <div class="placeholder">
+
+    </div>
+    <h1 class="primary-title">SPACE TRAVEL</h1>
+    <div class="menu-button planet-menu menu-move">
+      <div class="menu-button-section" ng-click="menuOpen = !menuOpen">
+
+      </div>
+      <div class="menu-button-section" ng-click="menuOpen = !menuOpen">
+
+      </div>
+      <div class="menu-button-section" ng-click="menuOpen = !menuOpen">
+
+      </div>
+      <div class="menu"  ng-show="menuOpen">
+        <div class="menu-item" ui-sref="home" ng-click="menuOpen = !menuOpen">
+          HOME
+        </div>
+        <div class="menu-item" ui-sref="spaceTravel" ng-click="menuOpen = !menuOpen">
+          SHIP SELECTION
+        </div>
+        <div class="menu-item" ng-click="menuOpen = !menuOpen">
+          CLOSE
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="clock" ng-cloak>
+    <show-time></show-time>
+  </div>
+</div>

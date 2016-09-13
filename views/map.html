@@ -1,0 +1,34 @@
+
+<div class="map-container">
+  <header class = "map-header">
+    <div class="placeholder">
+
+    </div>
+    <h1>MAP</h1>
+    <div class="menu-button">
+      <div class="menu-button-section" ng-click="menuOpen = !menuOpen">
+
+      </div>
+      <div class="menu-button-section" ng-click="menuOpen = !menuOpen">
+
+      </div>
+      <div class="menu-button-section" ng-click="menuOpen = !menuOpen">
+
+      </div>
+      <div class="menu"  ng-show="menuOpen">
+        <div class="menu-item" ui-sref="home" ng-click="menuOpen = !menuOpen">
+          HOME
+        </div>
+        <div class="menu-item" ui-sref="spaceTravel" ng-click="menuOpen = !menuOpen">
+          SHIP SELECTION
+        </div>
+        <div class="menu-item" ng-click="menuOpen = !menuOpen">
+          ANOTHER OPTION
+        </div>
+      </div>
+  </header>
+
+  <canvas id="space" outer-space>  </canvas>
+
+
+</div>

@@ -1,0 +1,73 @@
+
+<div class="planet-container" ng-cloak>
+  <header>
+    <div class="placeholder">
+
+    </div>
+    <h1 class="planet-name">{{planet.name}}</h1>
+    <div class="menu-button planet-menu">
+      <div class="menu-button-section" ng-click="menuOpen = !menuOpen">
+
+      </div>
+      <div class="menu-button-section" ng-click="menuOpen = !menuOpen">
+
+      </div>
+      <div class="menu-button-section" ng-click="menuOpen = !menuOpen">
+
+      </div>
+      <div class="menu"  ng-show="menuOpen">
+        <div class="menu-item" ui-sref="home" ng-click="menuOpen = !menuOpen">
+          HOME
+        </div>
+        <div class="menu-item" ui-sref="spaceTravel" ng-click="menuOpen = !menuOpen">
+          SHIP SELECTION
+        </div>
+        <div class="menu-item" ng-click="menuOpen = !menuOpen">
+          ANOTHER OPTION
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="planet-img">
+    <img src={{planet.image}} alt="" />
+  </div>
+  <div class="planet-info">
+    <span><strong>{{planet.name}}</strong></span>
+    <ul>
+      <li><strong>Type:</strong> {{planet.terrain}}</li>
+      <li><strong>Climate:</strong> {{planet.climate}}</li>
+      <li><strong>Gravity:</strong> {{planet.gravity}}</li>
+      <li><strong>Diameter:</strong> {{planet.diameter}} meters</li>
+      <li><strong>Population:</strong> {{planet.population}}</li>
+      <li><strong>Day Length:</strong> {{planet.rotation_period}} hours</li>
+      <li><strong>Year Length:</strong> {{planet.orbital_period}} days</li>
+
+    </ul>
+    <br>
+    <br>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis, neque pretium euismod iaculis, eros libero tincidunt massa, a volutpat ante ante sit amet nunc. Curabitur lobortis ac urna eu vulputate. Praesent eu dignissim est. Nullam commodo a arcu non viverra. Morbi est metus, ornare non suscipit et, ultricies non arcu. Morbi ipsum purus, rutrum convallis venenatis eget, pulvinar quis erat. Pellentesque ultrices leo sit amet volutpat pharetra. Praesent ornare volutpat nunc, ac eleifend sapien. Nam porta est non risus lacinia dapibus. Cras libero lorem, ultricies vel risus eu, vehicula pharetra tortor. Proin tristique nibh turpis, vitae volutpat risus tincidunt eget. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam maximus cursus elementum. Aenean a sollicitudin turpis.
+    </p>
+    <br>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta mauris et auctor congue. Nunc condimentum non est cursus lobortis. Curabitur hendrerit, enim at faucibus porttitor, purus dui egestas velit, nec elementum risus erat non libero. Ut elementum nunc luctus molestie varius. Duis libero dolor, ornare eu feugiat quis, maximus sed nisl. Pellentesque erat metus, tempor id euismod quis, imperdiet at purus. Morbi auctor lorem ac leo tristique, ut faucibus ante pulvinar. Quisque eu est ac nunc dignissim tristique. Ut id malesuada nibh.
+    </p>
+    <br>
+    <p>
+    Aenean ultricies commodo nunc, ac euismod mi varius ut. Integer ornare, sem nec vulputate eleifend, turpis quam aliquam lorem, et euismod metus tellus sed ipsum. Vestibulum nulla arcu, fringilla ac fermentum et, rutrum in diam. Etiam eget dictum dolor, ac hendrerit nibh. Integer sed cursus quam. Vivamus sollicitudin, purus quis vehicula consectetur, urna diam iaculis orci, varius eleifend diam neque eu nunc. Etiam pharetra pharetra dui, sit amet volutpat lectus aliquet eget. Ut maximus, ante ac tincidunt tempus, massa nibh mattis augue, at condimentum lorem magna et orci. Donec eu quam in felis sollicitudin dictum. Pellentesque maximus, diam sit amet dapibus placerat, ipsum elit viverra sem, sed commodo magna sapien id lorem. Sed tempus urna sit amet pharetra scelerisque.
+    </p>
+    <br>
+    <p>
+    Donec luctus in velit vitae ultrices. Vivamus hendrerit nisl ut elit tincidunt egestas. Morbi vel tortor purus. Vestibulum nec elit ac leo vehicula aliquet. Nunc quis metus nec ipsum interdum interdum ac quis dolor. Donec id nisl ac lorem egestas posuere id in dolor. Donec tristique tellus sed dui rutrum tincidunt. Duis dictum maximus volutpat. Donec eget maximus metus. Donec vel ante nisi. Integer fringilla velit vel mollis feugiat.
+    </p>
+    <br>
+    <p>
+    Quisque dapibus maximus elit, tristique euismod ligula consequat id. Nam sollicitudin, urna id pretium imperdiet, erat tortor mattis libero, ac malesuada quam neque eget eros. Sed porta libero at erat ullamcorper, gravida ornare arcu aliquam. Aliquam in purus at mauris volutpat placerat. Aenean pellentesque eros a quam mollis, sed tincidunt nibh lacinia. Duis id commodo tortor. Morbi consequat enim sed lorem feugiat scelerisque. Nullam maximus mi laoreet, luctus urna vitae, dignissim erat. Ut augue erat, porta non pulvinar vel, posuere eu dolor. In hac habitasse platea dictumst. Aliquam at tincidunt felis. Donec vitae metus vel ipsum molestie placerat sollicitudin sit amet mauris. Nunc est lorem, eleifend nec vulputate a, pellentesque sed nunc. Nullam sollicitudin rutrum neque, id congue neque rutrum nec. In hac habitasse platea dictumst. Suspendisse in convallis diam, nec aliquam sapien.
+    </p>
+
+
+
+
+
+  </div>
+</div>

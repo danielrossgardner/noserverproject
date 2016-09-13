@@ -1,0 +1,103 @@
+<div class="overlay">
+</div>
+<div class="image-container">
+  <header>
+    <div class="placeholder">
+
+    </div>
+    <h1 class="">SHIP SELECTION</h1>
+    <div class="menu-button">
+      <div class="menu-button-section" ng-click="menuOpen = !menuOpen">
+
+      </div>
+      <div class="menu-button-section" ng-click="menuOpen = !menuOpen">
+
+      </div>
+      <div class="menu-button-section" ng-click="menuOpen = !menuOpen">
+
+      </div>
+      <div class="menu"  ng-show="menuOpen">
+        <div class="menu-item" ui-sref="home" ng-click="menuOpen = !menuOpen">
+          HOME
+        </div>
+        <div class="menu-item" ui-sref="spaceTravel" ng-click="menuOpen = !menuOpen">
+          SHIP SELECTION
+        </div>
+        <div class="menu-item" ng-click="menuOpen = !menuOpen">
+          ANOTHER OPTION
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+  <div class="ship-selection" ng-show="testingShow">
+    <div class="ship-selection-header">
+      CHOOSE SPACESHIP
+    </div>
+    <ul ng-repeat="ship in ships | orderBy:'+name'"><strong>{{ship.name}}</strong>
+      <br>
+      <li>Size: {{ship.length}}</li>
+      <li>Class: {{ship.starship_class}}</li>
+      <li>Speed: {{ship.MGLT}} MGLT</li>
+      <br>
+      <button class="select-button" ui-sref="map({len : '{{ship.length}}', speed : '{{ship.MGLT}}'})">
+        select
+      </button>
+    </ul>
+
+
+    <div class="ship-footer">
+      <button class="select-button" type="button" ng-Click="prev()">Previous</button>
+      <button class="select-button" type="button" ng-Click="next()">Next</button>
+    </div>
+
+  </div>
+  <footer>
+    <div class="footer-shape">
+
+    </div>
+    <div class="footer-shape">
+
+    </div>
+    <div class="footer-shape">
+
+    </div>
+    <div class="footer-shape">
+
+    </div>
+    <div class="footer-shape">
+
+    </div>
+    <div class="footer-shape">
+
+    </div>
+    <div class="footer-shape">
+
+    </div>
+    <div class="footer-shape">
+
+    </div>
+    <div class="footer-shape">
+
+    </div>
+    <div class="footer-shape">
+
+    </div>
+    <div class="footer-shape">
+
+    </div>
+    <div class="footer-shape">
+
+    </div>
+    <div class="footer-shape">
+
+    </div>
+    <div class="footer-shape">
+
+    </div>
+    <div class="footer-shape">
+
+    </div>
+  </footer>
+</div>

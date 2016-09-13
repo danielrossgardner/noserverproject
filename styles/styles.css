@@ -1,0 +1,266 @@
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans:100,600';
+@import 'https://fonts.googleapis.com/css?family=Titillium+Web:200,400,700';
+.overlay{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  background: #000000;
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+  opacity: .5;
+}
+
+.image-container{
+  /*Background Image*/
+  height: 100vh;
+  background: url("../images/photo-1467685790346-20bfe73a81f0.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  z-index: 1;
+  /*Flex*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  z-index: 3;
+  padding-top: 20px;
+  /*Flex*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+}
+header:after{
+  content : "";
+  position: absolute;
+  left    : 10%;
+  bottom  : 0;
+  height  : 1px;
+  width   : 80%;  /* or 100px */
+  border-bottom:1px solid white;
+}
+
+header h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  font-size: 60px;
+  letter-spacing: 10px;
+  color: white;
+}
+
+.primary-title {
+  animation: skewTitle 6s;
+  transform: skewTitle(0deg);
+}
+
+@keyframes skewTitle {
+  0% { display: none;}
+  5% {
+    transform: skewX(40deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
+.menu {
+  position: absolute;
+  bottom: -80px;
+
+}
+.menu div {
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
+  background: white;
+  margin-bottom: 1px;
+}
+.menu-button{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  z-index: 3;
+}
+.menu-move {
+    animation: slideDownfromright 6s;
+}
+
+@keyframes slideDownfromright {
+  0% {
+    transform: translate(70px, -70px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+
+.menu-button-section {
+  width: 40px;
+  height: 8px;
+  border: 1.5px solid white;
+  /*border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;*/
+}
+
+.clock {
+  width: 100%;
+  height: 85vh;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  font-size: 200px;
+  letter-spacing: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  text-align: center;
+}
+
+
+/************************* SHIP SELECTION *************************************/
+.ship-selection-header {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.ship-selection {
+  width:90%;
+  height: 60vh;
+  margin: auto;
+  z-index: 3;
+  overflow: scroll;
+  overflow-x: hidden;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 200;
+  color: white;
+  /*background: black;*/
+}
+strong {
+  font-weight: 700;
+}
+.ship-selection ul {
+  margin-bottom: 20px;
+}
+.ship-selection li {
+  text-align: left;
+  /*border: 1px solid white;*/
+  padding-left: 20px;
+  float: left;
+}
+.select-button {
+  width: 70px;
+  height: 20px;
+  background: gray;
+  border-radius: 50px;
+  border: none;
+  font-family: 'Titillium Web', sans-serif;
+  transition-duration: 0.4s;
+}
+.select-button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.select-button:focus {outline:0;}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  z-index: 3;
+  /*background: grey;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  /*opacity: .5;*/
+}
+.footer-shape {
+  width: 5%;
+  height: 80%;
+  border: 1px solid white;
+}
+
+/******************************* MAP **********************************/
+.map-container{
+  width: 100%;
+  height: 100vh;
+  /*Flex*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*Background*/
+  background: url("../images/photo-1467685790346-20bfe73a81f0.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+.map-container header {
+  position: absolute;
+  z-index: 4;
+}
+#space {
+  margin:auto;
+  overflow: hidden;
+  z-index: 3;
+}
+/******************************* PLANETS **********************************/
+.planet-container{
+  /*Background Image*/
+  height: 100vh;
+  background: black
+  /*Flex*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.planet-container header h1 {
+  color: black;
+}
+.planet-menu .menu-button-section {
+  border: 1px solid black;
+}
+.planet-menu .menu-item {
+  color: white;
+  background: black;
+}
+.planet-container header:after{
+  border-bottom:1px solid black;
+  margin-bottom: 10px;
+}
+.planet-img {
+  height: 30vh;
+  width: 95%;
+  overflow: hidden;
+  margin:auto;
+  margin-bottom: 30px;
+  position: relative;
+}
+.planet-img img {
+  width: 100%;
+  position: absolute;
+  top: -40%;
+}
+.planet-info {
+  width: 95%;
+  height: 50vh;
+  margin:auto;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 200;
+  color: black;
+  /*border: 1px solid black;*/
+  position: relative;
+}
+planet-info p {
+  display:inline-block;
+}
+.planet-info ul {
+  border: 1px solid black;
+  display:inline-block;
+  float: right;
+  margin-left: 20px;
+}
